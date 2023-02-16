@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo</title>
+    <link rel="icon" type="image/x-icon" href="flafla.png">
+
+    <style> /* A tag style na Head serve para estilizar tags da tag body, de maneira geral, especificando a tag que sera formatada*/
+        table, th, td{
+            border: 1px solid white;
+            /*Essa estilização serve para contornar a tabela*/
+            /*border-collapse: collapse;*/
+            /*Essa estilização serve para juntar as linhas da tabela*/
+            /*border-radius: 4px;*/
+            /*Essa estilização serve para arrendondar as bordas das tags que foram mencionadas*/
+            /*border-style: groove;*/
+            /*Essa estilização serve para estilizar a borda da tag que foi mencionada (table, th, td)*/
+        }
+        th, td{
+            background-color: rgb(155, 30, 30);
+            /*Essa estilização serve mudar a cor de fundo da tag que for mencionada, nesse caso, a tag (th, td) das tabelas*/
+            border-color: rgb(255, 255, 255);
+            /*Essa estilização serve para colocar uma cor na borda da tag que foi mencionada (th, td)*/
+            padding: 15px;
+        }
+
+        table{
+            width: 100%;
+            /*Essa estilização serve para aumentar o tamanho da tag que esta sendo mencionada no momento (table)*/
+            border-spacing: 25px;
+            border: 2px solid green;
+        }
+        .T30{
+            width: 30%;
+        }
+
+        .T50{
+            width: 50%;
+        }
+
+        .T20{
+            width: 20%;
+        }
+
+        th{
+            width: 33.33%;
+            /*Essa estilização serve para aumentar o tamanho da tag que esta sendo mencionada no momento (th)*/
+        }
+
+        th{
+            text-align: left;
+            /*Essa estilização serve para alinhar um texto conforme for pedido, mencionando a tag q sera formatada (th)*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Título</p>
+    <table style="border: 1px solid black;"><!--Dar início a uma tabela-->
+        <tr> <!--Para criar uma linha-->
+            <th class="T30">Nome</th>   <!--Cria uma coluna com estilo padrão-->
+            <th class="T50" rowspan="2">E-mail</th>
+            <th class="T20">Número</th>
+        </tr>
+        <tr>
+            <td>Flamengo</td> <!--Uma celula da linha-->
+            <td>Mengão@teste.com</td>
+            <td>1981</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td>teste@teste.com</td>
+            <td>1888888</td>
+        </tr>
+    </table>
+    
+</body>
+
+</html>
